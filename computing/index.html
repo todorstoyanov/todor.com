@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>Computing timeline - Todor Stoyanov</TITLE> <META NAME=
+"Description" CONTENT="Computing timeline: PC - Internet - 
+Embedded - Wen 2.0 - Mobile - Enterprise - Cloud & Big Data"> <META http-equiv="Content-Type" CONTENT=
+"text/html; charset=utf-8"> <META NAME="robots" CONTENT="all"> 
+<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=
+"screen">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+data = {
+	"pc":
+		{
+			"ProgramingLanguages": "Pascal, C, Object Pascal", 
+			"DevelopmentTools": "Turbo Pascal, Turbo C, Borland Delphi, Borland C Builder",
+			"OS": "MS-DOS 3, MS-DOS 5, Windows 3.11, Windows 95",
+			"CPU": "Intel 8086, i386, Pentium",
+			"Companies": "Microsoft, IBM, Borland, Corel",
+			"Text": "Exciting times. Having a computer at home at this time, makes you ​​special. Floppy disks are very important thing, but many viruses spread through them. Norton Commander is a great interface to files and folders. It is starting point for the main activities - copying data and runing programs. Borland Turbo Pascal and Turbo C are great tools to create programs.<br><br>Windows 3.11 is coming. Program Manager offers a radical interface. Word 6 and Excel 5 dominate and do a great job. Corel Draw fills the gap for vector graphics. Borland Delphi makes Windows programming easy. To connect to the Internet, you use modem and Trumpet Winsock.<br><br>With Windows 95 comes the famous Start button. Borland C Builder is the key to Win32, but applications are hard to create.",
+			"Challenge": "Learn To Code."
+		},
+		"internet":
+		{
+			"ProgramingLanguages": "PHP, JavaScipt, MS ASP, Java, Perl, ActonScript, SQL", 
+			"DevelopmentTools": "Ultra Edit, Notepad, Zend Studio, Visual Studio, Macromedia Dreamweaver, MS Front Page",
+			"OS": "Windows 98, Windows NT/2000, Redhat Linux, Slackware Linux",
+			"CPU": "Celeron, Pentium 3",
+			"Companies": "Zend, Sun Microsystems, Redhat, Microsoft, Macromedia, Adobe",
+			"Text": "Exciting times. After the exploration of FTP and IRC the web sites are gaining attention. The need of finding the right data in the web makes the search engines very important. First AltaVista is king, after that Google conquers the users.</p><p>Linux becomes very popular for web development. Perl and PHP are used to generate dynamic web pages on the server side. HTML and Javascript reside on the client side along with Java applets. Postgers and MySQL are the RDBMs of choice.</p><p>Windows web development is also strong MS ASP offers good interface to MS SQL Server. Security is major MS problem, but LAMP is affected too. SQL injection and remote exploits are common. Hacking is fun.",
+			"Challenge": "At Webfactory we made websites, many websites. There was a need for a common platform on which to build our next projects. At that time there was no Joomla or Wordpress. We decided to build our own system for Windows and Linux, respectively LAMP and MS IIS. The system had a tremendous success - more than a thousand sites were created on it."
+		},
+		"embedded":
+		{
+			"ProgramingLanguages": "C, C++", 
+			"DevelopmentTools": "MS Visual Studio, CANoe",
+			"OS": "Windows XP",
+			"CPU": "M32R, Pentium 4",
+			"Companies": "Renesas, Vector, Microsoft",
+			"Text": "Computers move to the cars. There are tens of CPUs in every modern car, and the manufacturer is not Intel. They are many - Mitsubishi and Atmel are some of them.<br><br>Embedded development is fun because you are closer to the hardware, and you can see how computers operate apart of the many software abstraction layers. C is the master there. Basically C is king for creating mission critical and reliable software.<br><br>Debugging is slow, using CPU specific emulator connected to the Windows XP workstation. MS Visual studio is the IDE of choice. The serial CAN network available in the car is the communication backbone between the in vehicle devices - board computer, tire pressure controller, instrument cluster. etc.",
+			"Challenge": "At Johnson Controls we did embedded software for the automotive industry. The corporation acquired Sagem and later Borg Instruments. The two acquired companies had different proprietary operating systems, but a common client - Peugeot Citroen Group. For the purposes of a combined product, I succeed to integrate the application layer from one of the systems to the core of the another. Sagem  system was Cooperative multitasking, and Borg one somewhere between Simple Control Loop and Interrupt controlled system."
+		},
+		"web20":
+		{
+			"ProgramingLanguages": "Shell Script, PHP, SQL", 
+			"DevelopmentTools": "Apache, MySQL, Nginx, Memcached, NFS, Redis",
+			"OS": "CentOS 4/5/6, Windows Vista, Ubuntu 9/10/11",
+			"CPU": "Celeron D, Core 2 Duo, Xeon, Atom",
+			"Companies": "Redhat, Supermicro, HP, 3Ware, Google, Facebook, Microsoft",
+			"Text": "The web exploded when people discovered the web communication. IRC and ICQ are abandoned in favor to the social networks. Facebook and Twitter are born, and became leaders in information sharing. All the news sites place the sharing button of the two social titans.</p><p>We have our mini social revolution in Bulgaria with the sites Aha.bg and Dnes.bg.The traffic increases day by day, users are hungry for content and comunication. They share photos, messages, comments and videos.</p>",
+			"Challenge": "At Investor the challenges were two. First, to quickly build a portfolio of sites in two main categories: media and social networks. Having achieved the first the second came. And it was to cope with the traffic of the most popular social network in Bulgaria - Aha.bg and the most popular news site - Dnes.bg.</p><p>Our cycle was as follows: find the bottle neck, fix it, increased traffic, celebration and again find the bottle neck. We reached 30 million page views per day. What we did: load balancing the application on several servers, Shard the database and Partition some tables, Nginx for static content, Dynamic to Static  - everything that can be made static is made static and served by Nginx), maximal use of Memcached and of course adapt the application - productivity is achieved with fast or clever code, rather than big hardware."
+		},
+		"mobile":
+		{
+			"ProgramingLanguages": "Java, Javascript", 
+			"DevelopmentTools": "Eclipse, Android SDK, HTML5",
+			"OS": "Ubuntu 12/13/14, Android 2/4",
+			"CPU": "ARM 11/Cortex, Intel i3/i7",
+			"Companies": "Google, Apple, Facebook",
+			"Text": "After the smartphones adopted the multi-touch capacitive screen and the ARM processors with low power consumtion, the mobile revolution started. Apple is pioneering the use of smartphones by simply touching on the screen of glass. First iPhone appears and then, his bigger brother the iPad. Google is copying Apple and launch the Android OS on device with capacitive screen. The race is on and as expected the history repeats and Apple take the high-profit high-end of the market - 15%, while Google, giving Android for free conquers 85%.<p>There are two ways of making mobile apps: Native SDKs and HTML5 (Javascipt/HTML5/CSS3). The term responsive design appears and describes user interface of web pages good looking  on all screen resolutions.",
+			"Challenge": "Create usefull mobile application, that turns the smartphone into maker of multimedia stories and replicator of children's books."
+		},
+		"enterprise":
+		{
+			"ProgramingLanguages": "Java, Groovy", 
+			"DevelopmentTools": "Eclipse, Oracle, XML",
+			"OS": "Windows 7, Redhat EL 5/6, HP-UX, Solaris",
+			"CPU": "Intel i7",
+			"Companies": "Oracle, Microsoft, HP, ALU",
+			"Text": "The Enterprise software world is complicated. If a system lacks a feature, another system is introduced in the solution. At the end, the solutions consists of several, sometimes similar coupled systems. Maybe this way is better - more licences are sold and more people are engaged in the delivery and the maintenance. But maybe this complexity is the reason so many projects fail - 50% on avarage.<p>Java and Oracle RDBMs are the tools of choice, but Microsoft technologies are also popular.The ORM approach of data access is in battle with the relational one.<p>Traveling to project meetings and to client sites, long MS Lync calls and writing hundreds of documents are the activities accompaining the writing of code.",
+			"Challenge": "Work in international corporate environment - 25 nationalities. Understand clients needs and propose the best solution."
+		},
+		"cloud":
+		{
+			"ProgramingLanguages": "Java, Javascript, Shell Script", 
+			"DevelopmentTools": "SAPUI5, Eclipse, IntelliJ, SAP HANA, Sybase",
+			"OS": "Windows 8/10, SUSE Linux",
+			"CPU": "Intel i7/Xeon",
+			"Companies": "SAP, Amazon, Google, Microsoft",
+			"Text": "In progress...",
+			"Challenge": "Add value to SAP Cloud platform."
+		}
+		,
+		"fintech":
+		{
+			"ProgramingLanguages": "Java", 
+			"DevelopmentTools": "IntelliJ, MySQL, Docker",
+			"OS": "Windows 10, Linux",
+			"CPU": "Intel i5",
+			"Companies": "flatexDEGIRO, Revolut, Robinhood",
+			"Text": "In progress...",
+			"Challenge": "Add value to flatexDEGIRO fintech platform."
+		}
+}
+</script>
+<script type="text/javascript">
+	function fillDiv(id, data) {
+		$(id).empty();
+		$(id).append(data);
+	}
+	function setActiveClass(menuId) {
+		$("#pc").attr("class", "menuitem");
+		$("#internet").attr("class", "menuitem");
+		$("#embedded").attr("class", "menuitem");
+		$("#web20").attr("class", "menuitem");
+		$("#mobile").attr("class", "menuitem");
+		$("#enterprise").attr("class", "menuitem");
+		$("#cloud").attr("class", "menuitem");
+		$("#fintech").attr("class", "menuitem");
+		$(menuId).attr("class", "menuitem_selected");
+		
+		switch (menuId)
+		{
+			case "#pc": var obj = data.pc; break;
+			case "#internet": var obj = data.internet; break;
+			case "#embedded": var obj = data.embedded; break;
+			case "#web20": var obj = data.web20; break;
+			case "#mobile": var obj = data.mobile; break;
+			case "#enterprise": var obj = data.enterprise; break;
+			case "#cloud": var obj = data.cloud; break;
+			case "#fintech": var obj = data.fintech; break;
+		}
+		fillDiv("#planguages", obj.ProgramingLanguages);		
+		fillDiv("#devtools", obj.DevelopmentTools);
+		fillDiv("#os", obj.OS);
+		fillDiv("#cpu", obj.CPU);
+		fillDiv("#comps", obj.Companies);
+		fillDiv("#text", obj.Text);
+		fillDiv("#challenge", obj.Challenge);		
+	}
+	$(document).ready(function() {		
+		setActiveClass("#pc");
+		$("#loadPC").click(function() {
+			setActiveClass("#pc");
+		});
+		$("#loadInternet").click(function() {
+			setActiveClass("#internet");		
+		});
+		$("#loadEmbedded").click(function() {
+			setActiveClass("#embedded");
+		});
+		$("#loadWeb20").click(function() {
+			setActiveClass("#web20");
+		});
+		$("#loadMobile").click(function() {
+			setActiveClass("#mobile");
+		});
+		$("#loadEnterprise").click(function() {
+			setActiveClass("#enterprise");
+		});
+		$("#loadCloud").click(function() {
+			setActiveClass("#cloud");
+		});
+		$("#loadFintech").click(function() {
+			setActiveClass("#fintech");
+		});
+	});
+</script>
+
+</HEAD>
+<BODY>
+<div id="container">
+<div id="top"><h1>My Computing Timeline</h1></div>
+<div id="menu">
+	<a id="loadPC" href="javascript:void(0);"><div id="pc" class="menuitem"><img border="0" src="icons/pc.png"><br>PC</div></a>
+	<a id="loadInternet" href="javascript:void(0);"><div id="internet" class="menuitem"><img border="0" src="icons/internet.png"><br>Internet</div></a>
+	<a id="loadEmbedded" href="javascript:void(0);"><div id="embedded" class="menuitem"><img border="0" src="icons/embedded.png"><br>Embedded</div></a>
+	<a id="loadWeb20" href="javascript:void(0);"><div id="web20" class="menuitem"><img border="0" src="icons/web2.0.png"><br>Social Web</div></a>
+	<a id="loadMobile" href="javascript:void(0);"><div id="mobile" class="menuitem"><img border="0" src="icons/mobile.png"><br>Mobile</div></a>
+	<a id="loadEnterprise" href="javascript:void(0);"><div id="enterprise" class="menuitem"><img border="0" src="icons/enterprise.png"><br>Enterprise</div></a>
+	<a id="loadCloud" href="javascript:void(0);"><div id="cloud" class="menuitem"><img border="0" src="icons/cloud.png"><br>Cloud</div></a>
+	<a id="loadFintech" href="javascript:void(0);"><div id="cloud" class="menuitem"><img border="0" src="icons/fintech.png"><br>Fintech</div></a>
+</div>	   
+<div id="col2">
+	<h4>Programing Languages</h4>
+	<div class="sbox" id="planguages">
+	</div>
+	<h4>Development Tools</h4>
+	<div class="sbox" id="devtools">
+	</div>
+	<h4>OS</h4>
+	<div class="sbox" id="os">
+	</div>
+	<h4>CPU</h4>
+	<div class="sbox" id="cpu">
+	</div>
+	<h4>Companies</h4>
+	<div class="sbox" id="comps"> 
+	</div>
+</div>
+<div id="col1">
+	<h4>Challenge</h4>
+	<div class="bbox" id="challenge"></div>
+	<h4>History</h4>
+	<div class="bbox" id="text">
+	</div>
+	</div>
+</div>
+<div id="footer">Copyright © 2012 - 2022 todor.com. All rights reserved.</div>
+</div>
+</BODY>
+</HTML>
