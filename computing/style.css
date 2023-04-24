@@ -8,8 +8,8 @@
 }
 
 #top {
-    padding1: .5em;
     color: #18649a;
+	overflow-wrap: break-word;
     font-family: Arial, Helvetica, sans-serif;
 }
 
