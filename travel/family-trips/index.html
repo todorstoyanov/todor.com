@@ -60,11 +60,12 @@ function renderTrip(id) {
 </script>
 <script id="tripTemplate" type="text/x-jquery-tmpl">
     <div id="col1">
-    <div onClick="callRender()" class="home">Home</div>
     <h3>${name} - ${year}</h3>
     Distance: <b>${distance}</b> km<br>
     Vehicle: <b>${vehicle}</b><br>
     <img src="images/${vehicle}.jpg" alt="${vehicle}"><br>
+	<div onClick="callRender()" class="home"><< Back</div>
+	</b><br>
     </div>
     <div id="col2">
     <img class="coverimg" src="images/${id}.jpg" alt="${name}">
@@ -83,7 +84,7 @@ function renderTrip(id) {
 </script>
 </HEAD>
 <BODY onLoad="callRender()">
-<div id="header">Family Trips</div>
+<div id="header"><h1>Family Trips</h1></div>
 <div id="container"></div>
 <div id="footer">© 2018 todor.com. All rights reserved.</div>
 </BODY>
