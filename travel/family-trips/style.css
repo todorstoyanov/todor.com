@@ -1,0 +1,71 @@
+* {
+	margin: 2;
+	padding: 2;
+}
+#container
+{
+width: 95%;
+margin: 10px;
+background-color: #fff;
+line-height: 100%;
+color: #272F60;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+#header
+{
+font-family: Georgia, Serif;
+width: 95%;
+margin: 10px;
+padding: .5em;
+border-color: #619FBA; 
+border-bottom: 1px solid;
+color: #272F60;
+font-size: 20px; 
+font-weight: bold;
+}
+#footer
+{
+clear: both;
+width: 95%;
+margin: 10px;
+padding: .5em;
+border-color: #619FBA; 
+border-top: 1px solid;color: #272F60;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px; 
+font-weight: normal;
+}
+a, a:hover, a:visited {
+color: #272F60;
+text-decoration: none;
+font-family: Georgia, Helvetica, sans-serif;
+}
+h3 {
+padding: 3px auto;
+}
+.home {
+color: #fff;
+background-color: #619FBA; 
+padding: 3px;
+cursor: pointer;
+width: 50px;
+margin: 0;
+}
+#col1
+{
+width: 300px;
+display: inline-block;
+text-align: left;
+}
+#col2
+{
+width: 700px;
+margin-left: 20px;
+display: inline-block;
+vertical-align: top;
+}
+#tripbutton {
+display: inline-block;
+padding: 5px;
+}

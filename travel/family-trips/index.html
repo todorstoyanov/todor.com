@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<TITLE>Family Trips - Todor Stoyanov</TITLE>
+<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA="screen">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+var ft = [
+		{id: "0", name: "Athos", year: "2012", vehicle: "Fiat Marea Weekend", distance: "780", swidth: ""},
+		{id: "1", name: "Sithonia", year: "2012", vehicle: "Fiat Marea Weekend", distance: "680", swidth: ""},
+		{id: "2", name: "Parga", year: "2012", vehicle: "Fiat Marea Weekend", distance: "450", swidth: ""},
+		{id: "3", name: "Lefkada", year: "2012", vehicle: "Fiat Marea Weekend", distance: "830", swidth: ""},
+		{id: "4", name: "Lefkada", year: "2013", vehicle: "Opel Zafira", distance: "1600", swidth: ""},
+		{id: "5", name: "Sinemorec", year: "2014", vehicle: "Opel Zafira", distance: "1080", swidth: ""},
+		{id: "6", name: "Sithonia", year: "2014", vehicle: "Opel Zafira", distance: "1000", swidth: ""},
+		{id: "7", name: "Nessebar", year: "2015", vehicle: "Opel Zafira", distance: "900", swidth: ""},
+		{id: "8", name: "Sithonia", year: "2015", vehicle: "Opel Zafira", distance: "1000", swidth: ""},
+		{id: "9", name: "Sithonia", year: "2016", vehicle: "Opel Zafira", distance: "1000", swidth: ""},
+		{id: "10", name: "Bulgaria", year: "2017", vehicle: "Opel Zafira", distance: "2000", swidth: ""},
+		{id: "11", name: "Thracian sea", year: "2017", vehicle: "Opel Zafira", distance: "1500", swidth: ""},
+		{id: "12", name: "Rila Lakes", year: "2018", vehicle: "KIA Ceed", distance: "200", swidth: ""},
+		{id: "13", name: "Toroni", year: "2018", vehicle: "KIA Ceed", distance: "1000", swidth: ""},
+		{id: "14", name: "Rodopi", year: "2018", vehicle: "KIA Ceed", distance: "1200", swidth: ""},
+		{id: "15", name: "Ezerets", year: "2018", vehicle: "Opel Zafira", distance: "1500", swidth: ""},
+		{id: "16", name: "Rodopi", year: "2018", vehicle: "Opel Zafira", distance: "300", swidth: ""},
+		{id: "17", name: "Burgas", year: "2019", vehicle: "KIA Ceed", distance: "1000", swidth: ""},
+		{id: "18", name: "Krapets", year: "2019", vehicle: "KIA Ceed", distance: "2500", swidth: ""},
+		{id: "19", name: "Sozopol", year: "2019", vehicle: "Opel Zafira", distance: "1200", swidth: ""},
+		{id: "20", name: "Balkan Mountains", year: "2019", vehicle: "KIA Ceed", distance: "500", swidth: ""},
+		{id: "21", name: "Bansko", year: "2019", vehicle: "Opel Zafira", distance: "400", swidth: ""},
+		{id: "22", name: "Ravda", year: "2020", vehicle: "KIA Ceed", distance: "800", swidth: ""},
+		{id: "23", name: "Krapets", year: "2020", vehicle: "KIA Ceed", distance: "2200", swidth: ""},
+		{id: "24", name: "Ruse", year: "2020", vehicle: "KIA Ceed", distance: "650", swidth: ""},
+		{id: "25", name: "Mesta River", year: "2021", vehicle: "KIA Ceed", distance: "350", swidth: ""},
+		{id: "26", name: "Balchik", year: "2021", vehicle: "KIA Ceed", distance: "3000", swidth: ""},
+		{id: "27", name: "Nesebar", year: "2022", vehicle: "KIA Ceed", distance: "2500", swidth: ""},
+		{id: "28", name: "Kavarna", year: "2022", vehicle: "KIA Ceed", distance: "2500", swidth: ""}
+];
+ft[0].swidth = screen.width;
+
+function callRender() {
+	$("#container").empty();
+	$( "#tripList" ).tmpl( ft )
+        .appendTo( "#container" );
+    $.each(ft, function(key, val) {		
+		$('#' + key).bind('click', function() {
+			renderTrip(key);
+		});
+	});
+	$( "#carList" ).tmpl()
+        .appendTo( "#container" );
+}
+function renderTrip(id) {
+	$("#container").empty();
+	$( "#tripTemplate" ).tmpl( ft[id] )
+        .appendTo( "#container" );
+}
+</script>
+<script id="tripTemplate" type="text/x-jquery-tmpl">
+    <div id="col1">
+    <div onClick="callRender()" class="home">Home</div>
+    <h3>${name} - ${year}</h3>
+    Distance: <b>${distance}</b> km<br>
+    Vehicle: <b>${vehicle}</b><br>
+    <img src="images/${vehicle}.jpg" alt="${vehicle}"><br>
+    </div>
+    <div id="col2">
+    <img class="coverimg" src="images/${id}.jpg" alt="${name}">
+    </div>
+</script>
+<script id="tripList" type="text/x-jquery-tmpl">
+    <div style="margin-top: 50px;" id="tripbutton"><a id="${id}" href="javascript:void(0);"><img class="coverimg" src="images/${id}s.jpg" alt="${name}" style="border-radius: 3%; border-style: ridge; border-color: #272F60"><br>${name} - ${year}</a></div>
+</script>
+<script id="carList" type="text/x-jquery-tmpl">
+    <div style="margin-top: 50px; display: flex; flex-direction: row; justify-content: center; width: 100%;">
+		<img class="carimage" src="images/Fiat Marea Weekend.jpg"">
+		<img class="carimage" src="images/Opel Zafira.jpg">
+		<img class="carimage" src="images/KIA Ceed.jpg">
+	</div>
+</div>
+</script>
+</HEAD>
+<BODY onLoad="callRender()">
+<div id="header">Family Trips</div>
+<div id="container"></div>
+<div id="footer">© 2018 todor.com. All rights reserved.</div>
+</BODY>
+</HTML>
