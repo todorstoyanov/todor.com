@@ -1,0 +1,68 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #014f63;
+}
+
+div.inline {
+	display:inline-block;
+}
+
+.tile {
+	padding: 2px;
+}
+
+.zf-green {
+    color: #68b604;
+}
+
+.btn-success {
+  background-color: #57a900;
+  background-image: -moz-linear-gradient(top, #70d900, #57a900);
+  background-image: -ms-linear-gradient(top, #70d900, #57a900);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70d900), to(#57a900));
+  background-image: -webkit-linear-gradient(top, #70d900, #57a900);
+  background-image: -o-linear-gradient(top, #70d900, #57a900);
+  background-image: linear-gradient(top, #70d900, #57a900);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  background-color: #57a900;
+}
+
+.btn-success:active, .btn-success.active {
+  background-color: #57a900;
+}
+
+div.container a.brand {
+    background: url("/web/20150222070729im_/http://www.todor.com/images/zf2-logo.png") no-repeat scroll 0 10px transparent;
+    margin-left: 0;
+    padding: 8px 20px 12px 40px;
+}
+
+/*
+     FILE ARCHIVED ON 07:07:29 Feb 22, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:39:09 Mar 04, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots.policy: 0.197
+  CDXLines.iter: 21.599 (3)
+  RedisCDXSource: 1.124
+  captures_list: 364.666
+  esindex: 0.015
+  LoadShardBlock: 338.405 (3)
+  PetaboxLoader3.resolve: 176.977
+  PetaboxLoader3.datanode: 804.652 (4)
+  exclusion.robots: 0.211
+  load_resource: 663.915
+*/
