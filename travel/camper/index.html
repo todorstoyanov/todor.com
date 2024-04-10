@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Camper Travel</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="photoswipe.umd.min.js"></script>
+    <script src="photoswipe-lightbox.umd.min.js"></script>
+    <link rel="stylesheet" href="photoswipe.css">
+    <style>
+        .row-padding {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .gallery-img {
+            width: 225px;
+            height: 150px;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        let data = [{"fullsize":"img_5518.jpg","thumbnail":"img_5518_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5522.jpg","thumbnail":"img_5522_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5523.jpg","thumbnail":"img_5523_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5542.jpg","thumbnail":"img_5542_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5777.jpg","thumbnail":"img_5777_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5784.jpg","thumbnail":"img_5784_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5790.jpg","thumbnail":"img_5790_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5844.jpg","thumbnail":"img_5844_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5855.jpg","thumbnail":"img_5855_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5863.jpg","thumbnail":"img_5863_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5885.jpg","thumbnail":"img_5885_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5902.jpg","thumbnail":"img_5902_thumb.jpg","width":4898,"height":2902},{"fullsize":"img_5903.jpg","thumbnail":"img_5903_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_5904.jpg","thumbnail":"img_5904_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6006.jpg","thumbnail":"img_6006_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6056.jpg","thumbnail":"img_6056_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6061.jpg","thumbnail":"img_6061_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6098.jpg","thumbnail":"img_6098_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6132.jpg","thumbnail":"img_6132_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6172.jpg","thumbnail":"img_6172_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6214.jpg","thumbnail":"img_6214_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6248.jpg","thumbnail":"img_6248_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6271.jpg","thumbnail":"img_6271_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6345.jpg","thumbnail":"img_6345_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6427.jpg","thumbnail":"img_6427_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6440.jpg","thumbnail":"img_6440_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6444.jpg","thumbnail":"img_6444_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6478.jpg","thumbnail":"img_6478_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6506.jpg","thumbnail":"img_6506_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6580.jpg","thumbnail":"img_6580_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6671.jpg","thumbnail":"img_6671_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6739.jpg","thumbnail":"img_6739_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6787.jpg","thumbnail":"img_6787_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6790.jpg","thumbnail":"img_6790_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6881.jpg","thumbnail":"img_6881_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6896.jpg","thumbnail":"img_6896_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6925.jpg","thumbnail":"img_6925_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6930.jpg","thumbnail":"img_6930_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6933.jpg","thumbnail":"img_6933_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6945.jpg","thumbnail":"img_6945_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6955.jpg","thumbnail":"img_6955_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6956.jpg","thumbnail":"img_6956_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_6975.jpg","thumbnail":"img_6975_thumb.jpg","width":3664,"height":2494},{"fullsize":"img_6997.jpg","thumbnail":"img_6997_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7004.jpg","thumbnail":"img_7004_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7042.jpg","thumbnail":"img_7042_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7071.jpg","thumbnail":"img_7071_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7090.jpg","thumbnail":"img_7090_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7099.jpg","thumbnail":"img_7099_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7100.jpg","thumbnail":"img_7100_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7131.jpg","thumbnail":"img_7131_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7140.jpg","thumbnail":"img_7140_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7196.jpg","thumbnail":"img_7196_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7202.jpg","thumbnail":"img_7202_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7205.jpg","thumbnail":"img_7205_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7210.jpg","thumbnail":"img_7210_thumb.jpg","width":3541,"height":2029},{"fullsize":"img_7250.jpg","thumbnail":"img_7250_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7260.jpg","thumbnail":"img_7260_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7304.jpg","thumbnail":"img_7304_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7313.jpg","thumbnail":"img_7313_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7317.jpg","thumbnail":"img_7317_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7325.jpg","thumbnail":"img_7325_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7949.jpg","thumbnail":"img_7949_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7950.jpg","thumbnail":"img_7950_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7955.jpg","thumbnail":"img_7955_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7957.jpg","thumbnail":"img_7957_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_7967.jpg","thumbnail":"img_7967_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8045.jpg","thumbnail":"img_8045_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8052.jpg","thumbnail":"img_8052_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8058.jpg","thumbnail":"img_8058_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8128.jpg","thumbnail":"img_8128_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8132.jpg","thumbnail":"img_8132_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8138.jpg","thumbnail":"img_8138_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8140.jpg","thumbnail":"img_8140_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8142.jpg","thumbnail":"img_8142_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8147.jpg","thumbnail":"img_8147_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8158.jpg","thumbnail":"img_8158_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8166.jpg","thumbnail":"img_8166_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8186.jpg","thumbnail":"img_8186_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8198.jpg","thumbnail":"img_8198_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8204.jpg","thumbnail":"img_8204_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8206.jpg","thumbnail":"img_8206_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8216.jpg","thumbnail":"img_8216_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8217.jpg","thumbnail":"img_8217_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8232.jpg","thumbnail":"img_8232_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8262.jpg","thumbnail":"img_8262_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8285.jpg","thumbnail":"img_8285_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8310.jpg","thumbnail":"img_8310_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8339.jpg","thumbnail":"img_8339_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8359.jpg","thumbnail":"img_8359_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8361.jpg","thumbnail":"img_8361_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8378.jpg","thumbnail":"img_8378_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8381.jpg","thumbnail":"img_8381_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8412.jpg","thumbnail":"img_8412_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8418.jpg","thumbnail":"img_8418_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8587.jpg","thumbnail":"img_8587_thumb.jpg","width":4898,"height":3265},{"fullsize":"img_8588.jpg","thumbnail":"img_8588_thumb.jpg","width":3264,"height":1836},{"fullsize":"img_8589.jpg","thumbnail":"img_8589_thumb.jpg","width":3264,"height":1836},{"fullsize":"img_8590.jpg","thumbnail":"img_8590_thumb.jpg","width":3927,"height":2382},{"fullsize":"img_8591.jpg","thumbnail":"img_8591_thumb.jpg","width":4032,"height":2067}];
+
+        function generateImage(img) {
+            return `<a href="img\\${img.fullsize}" data-pswp-width="${img.width}" data-pswp-height="${img.height}"><img class="gallery-img" src="img\\${img.thumbnail}"/></a>`;
+        }
+
+        window.onload = function() {
+            let gallery = document.querySelector('.gallery');
+            let html = data.map(generateImage).join('\n');
+            gallery.innerHTML = html;
+        };
+    </script>
+</head>
+<body style="background-color: #F7F6F1;">
+    <div class="container text-center">
+        <div class="row row-padding">
+            <div class="col">
+                <img src="campernatura.png" class="img-fluid" style="min-width: 640px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="camper-map.png" class="img-fluid" style="min-width: 640px;">
+            </div>
+        </div>
+        <div class="row row-padding">
+            <div class="col">
+                <div class="gallery"></div>
+            </div>
+        </div>
+        <div class="row row-padding">
+            <div class="col" style="color: #648381;">
+                <p>&copy; todor.com. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+<script src="bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    var lightbox = new PhotoSwipeLightbox({
+        gallery: '.gallery',
+        children: 'a',
+        pswpModule: PhotoSwipe
+    });
+    lightbox.init();
+</script>
+</body>
+</html>
