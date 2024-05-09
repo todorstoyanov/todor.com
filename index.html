@@ -5,17 +5,10 @@
   <title>Todor</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <style>
     .row {
       padding: 10px;
@@ -36,9 +29,28 @@
     .crafts {
       background-color: #AEA3E0;
     }
-	
-	.timeline {
+
+    .timeline {
       background-color: #AEA3E0;
+    }
+
+    .camping-container {
+      display: inline-block;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      padding: 10px;
+      background-color: #03998e;
+    }
+
+    .label {
+      color: #ffffff;
+      font-size: 30px;
+      font-style: bold;
+    }
+
+    .image-list img {
+      width: 15%;
+      height: auto;
     }
   </style>
 </head>
@@ -57,11 +69,11 @@
         </div>
         <div class="row">
           <div class="card" style="width: 20rem; background-color: transparent; border: 0px;">
-		    <div class="embed-responsive embed-responsive-4by3">
-            <a href="computing/index.html" target="_blank">
-              <img src="img/computing-timeline.png" class="card-img-top embed-responsive-item">
-            </a>
-			</div>
+            <div class="embed-responsive embed-responsive-4by3">
+              <a href="computing/index.html" target="_blank">
+                <img src="img/computing-timeline.png" class="card-img-top embed-responsive-item">
+              </a>
+            </div>
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">My Computing Timeline</p>
             </div>
@@ -70,16 +82,16 @@
       </div>
     </div>
     <div class="row travel">
-	<div class="column">
+      <div class="column">
         <div>
           <h3>Travel</h3>
         </div>
         <div class="row" style="border: 1px">
           <div class="card" style="width: 20rem; background-color: transparent; border: 0px;">
             <a href="travel/camper/index.html" target="_blank">
-			  <div class="embed-responsive embed-responsive-4by3">
-              <img src="img/travel-camper.png" class="card-img-top embed-responsive-item">
-			  </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <img src="img/travel-camper.png" class="card-img-top embed-responsive-item">
+              </div>
             </a>
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">Camper</p>
@@ -87,96 +99,110 @@
           </div>
           <div class="card" style="width: 20rem; background-color: transparent; border: 0px;">
             <a href="travel/europe/index.html" target="_blank">
-			  <div class="embed-responsive embed-responsive-4by3">
-              <img src="img/travel-europe.png" class="card-img-top embed-responsive-item">
-			  </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <img src="img/travel-europe.png" class="card-img-top embed-responsive-item">
+              </div>
             </a>
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">Europe</p>
             </div>
-          </div>	
-		  <div class="card" style="width: 20rem; background-color: transparent; border: 0px;">
+          </div>
+          <div class="card" style="width: 20rem; background-color: transparent; border: 0px;">
             <a href="travel/family-trips/index.html" target="_blank">
-			  <div class="embed-responsive embed-responsive-4by3">
-              <img src="img/travel-family-trips.png" class="card-img-top embed-responsive-item">
-			  </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <img src="img/travel-family-trips.png" class="card-img-top embed-responsive-item">
+              </div>
             </a>
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">Family Trips</p>
             </div>
           </div>
-		  <div class="card" style="width: 20rem; background-color: transparent; border: 0px;">
-            <a href="travel/camping/index.html" target="_blank">
-			  <div class="embed-responsive embed-responsive-4by3">
-              <img src="img/travel-camping.png" class="card-img-top embed-responsive-item">
-			  </div>
+          <div class="card" style="width: 20rem; background-color: transparent; border: 0px;">
+            <a href="travel/camping/index.html" target="_blank" style="text-decoration: none;">
+
+              <div class="camping-container">
+
+                <div class="label">Camping</div>
+                <div class="image-list">
+                  <img border="0" src="travel/camping/icons/tent-narrow.png">
+                  <img border="0" src="travel/camping/icons/combi.png">
+                  <img border="0" src="travel/camping/icons/caravan.png">
+                  <img border="0" src="travel/camping/icons/campervan.png">
+                  <img border="0" src="travel/camping/icons/camper.png">
+                </div>
+
+              </div>
             </a>
+
+
+
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">Camping</p>
             </div>
-          </div>	 
+
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-	<div class="row timeline">
-	<div class="column">
+    <div class="row timeline">
+      <div class="column">
         <div>
           <h3>Site Timeline</h3>
         </div>
         <div class="row">
           <div class="card" style="width: 12rem; background-color: transparent; border: 0px;">
             <a href="timeline/1999/index.html" target="_blank">
-			  <div class="embed-responsive embed-responsive-4by3">
-              <img src="img/timeline-1999.png" class="card-img-top embed-responsive-item">
-			  </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <img src="img/timeline-1999.png" class="card-img-top embed-responsive-item">
+              </div>
             </a>
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">1999</p>
             </div>
           </div>
-		  <div class="card" style="width: 12rem; background-color: transparent; border: 0px;">
+          <div class="card" style="width: 12rem; background-color: transparent; border: 0px;">
             <a href="timeline/2000/index.html" target="_blank">
-			  <div class="embed-responsive embed-responsive-4by3">
-              <img src="img/timeline-2000.png" class="card-img-top embed-responsive-item">
-			  </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <img src="img/timeline-2000.png" class="card-img-top embed-responsive-item">
+              </div>
             </a>
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">2000</p>
             </div>
           </div>
-		  <div class="card" style="width: 12rem; background-color: transparent; border: 0px;">
+          <div class="card" style="width: 12rem; background-color: transparent; border: 0px;">
             <a href="timeline/2002/index.html" target="_blank">
-			  <div class="embed-responsive embed-responsive-4by3">
-              <img src="img/timeline-2002.png" class="card-img-top embed-responsive-item">
-			  </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <img src="img/timeline-2002.png" class="card-img-top embed-responsive-item">
+              </div>
             </a>
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">2002</p>
             </div>
           </div>
-		  <div class="card" style="width: 12rem; background-color: transparent; border: 0px;">
+          <div class="card" style="width: 12rem; background-color: transparent; border: 0px;">
             <a href="timeline/2006/index.html" target="_blank">
-			  <div class="embed-responsive embed-responsive-4by3">
-              <img src="img/timeline-2006.png" class="card-img-top embed-responsive-item">
-			  </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <img src="img/timeline-2006.png" class="card-img-top embed-responsive-item">
+              </div>
             </a>
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">2006</p>
             </div>
           </div>
-		  <div class="card" style="width: 12rem; background-color: transparent; border: 0px;">
+          <div class="card" style="width: 12rem; background-color: transparent; border: 0px;">
             <a href="timeline/2012/index.html" target="_blank">
-			  <div class="embed-responsive embed-responsive-4by3">
-              <img src="img/timeline-2012.png" class="card-img-top embed-responsive-item">
-			  </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <img src="img/timeline-2012.png" class="card-img-top embed-responsive-item">
+              </div>
             </a>
             <div class="card-body p-1 mx-auto">
               <p class="card-text" style="font-weight: bold;">2012</p>
             </div>
           </div>
         </div>
+      </div>
     </div>
-	</div>
     <div class="row text-center">
       <p class="text-center">&copy; 1999 - 2020</p>
     </div>
